@@ -22,7 +22,7 @@
 *.html   text
 *.inc    text
 *.ini    text
-*.js     text
+*.js     binary
 *.jsx    text
 *.json   text
 *.less   text
