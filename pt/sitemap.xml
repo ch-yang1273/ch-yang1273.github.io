@@ -6,6 +6,11 @@
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="ko"
+                href="https://ch-yang1273.github.io/ko/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://ch-yang1273.github.io/categories/"
                 />
@@ -13,19 +18,6 @@
                 rel="alternate"
                 hreflang="pt"
                 href="https://ch-yang1273.github.io/pt/categories/"
-                />
-  </url><url>
-    <loc>https://ch-yang1273.github.io/pt/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ch-yang1273.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://ch-yang1273.github.io/pt/"
                 />
   </url><url>
     <loc>https://ch-yang1273.github.io/pt/tags/css/</loc>
@@ -103,6 +95,11 @@
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="ko"
+                href="https://ch-yang1273.github.io/ko/series/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://ch-yang1273.github.io/series/"
                 />
@@ -119,6 +116,11 @@
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="ko"
+                href="https://ch-yang1273.github.io/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://ch-yang1273.github.io/tags/"
                 />
@@ -133,6 +135,24 @@
   </url><url>
     <loc>https://ch-yang1273.github.io/pt/categories/temas/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ch-yang1273.github.io/pt/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://ch-yang1273.github.io/ko/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ch-yang1273.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://ch-yang1273.github.io/pt/"
+                />
   </url><url>
     <loc>https://ch-yang1273.github.io/pt/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>

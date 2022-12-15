@@ -6,6 +6,11 @@
     <lastmod>2022-03-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="ko"
+                href="https://ch-yang1273.github.io/ko/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="pt"
                 href="https://ch-yang1273.github.io/pt/"
                 />
@@ -17,6 +22,11 @@
   </url><url>
     <loc>https://ch-yang1273.github.io/categories/</loc>
     <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://ch-yang1273.github.io/ko/categories/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -48,6 +58,11 @@
     <lastmod>2022-03-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="ko"
+                href="https://ch-yang1273.github.io/ko/series/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="pt"
                 href="https://ch-yang1273.github.io/pt/series/"
                 />
@@ -62,6 +77,11 @@
   </url><url>
     <loc>https://ch-yang1273.github.io/tags/</loc>
     <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://ch-yang1273.github.io/ko/tags/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
