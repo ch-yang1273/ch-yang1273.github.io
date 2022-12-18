@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on ych`s blog</title>
+    <link>https://ch-yang1273.github.io/notes/</link>
+    <description>Recent content in Notes on ych`s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 16 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ch-yang1273.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Js Digest 에러</title>
+      <link>https://ch-yang1273.github.io/notes/blog/2022-12-16-js-digest-%EC%97%90%EB%9F%AC/2022-12-16-js-digest-%EC%97%90%EB%9F%AC/</link>
+      <pubDate>Fri, 16 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/notes/blog/2022-12-16-js-digest-%EC%97%90%EB%9F%AC/2022-12-16-js-digest-%EC%97%90%EB%9F%AC/</guid>
+      <description>
+        
+          
+            에러 현상 1Failed to find a valid digest in the &amp;#39;integrity&amp;#39; attribute for resource &amp;#39;https://ch-yang1273.github.io/en/js/bundle.d0a3ec7c713389a2d8c3545b99eb7e5519e045808f399e8609c37cb5f0b80fb9d0a05da289fbda3d947daee16150475f5c6d7465e3517b3a246037068d485966.js&amp;#39; with computed SHA-512 integrity &amp;#39;kh5Ntgf028JQkGf0yjXre13eHvIOr2oC13RBICwXpbXXA3Ssdnx7V9UwHhxuXQ/r/gbxnk2PIPiYqD0xsedFuw==&amp;#39;. The resource has been blocked. Build 된 Hugo site를 빌드해서 github에 올려보니 에니메이션이나 Dark mode 버튼 등이 동작하지 않았다.
+→ Local Server에서는 정상 동작했다.
+개발자모드를 켜서 보니 위와 같은 에러를 확인했다.
+“*.js” 파일이 git 으로 upload 되는 과정에서 CRLF 상태가 변해 Hash digest도 변경되는 것으로 보였다.
+해결 방법 “public/” 폴더 아래의 “*.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>데이터베이스 개론(정리)</title>
+      <link>https://ch-yang1273.github.io/notes/database/2022-06-06-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%A1%A0%EC%A0%95%EB%A6%AC/2022-06-06-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%A1%A0%EC%A0%95%EB%A6%AC/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/notes/database/2022-06-06-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%A1%A0%EC%A0%95%EB%A6%AC/2022-06-06-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%A1%A0%EC%A0%95%EB%A6%AC/</guid>
+      <description>
+        
+          
+            3장. 데이터베이스 시스템 스키마 데이터 구조와 제약 조건을 정의
+Example)
+저장된 값 = 인스턴스
+시스템 카탈로그 (= 데이터 사전, 시스템 데이터베이스) 저장되는 데이터에 관한 정보를 저장하는 곳 데이터 정의어 (DDL) - Difinition 데이터 조작어 (DML) - Manipulation 데이터 제어어 (DCL) - Control 4장. 데이터 모델링 데이터 모델링 현실 세계의 데이터를 컴퓨터 세계의 데이터베이스로 옮기는 변환 과정 E-R Model (개체-관계 모델) Entitiy-Relationship Model Entity (개체) 저장할만한 가치가 있는 요소 개체 타입 → 고객(이름, 주소, 연락처, 적립금) 개체 인스턴스 : 개체를 구성하는 속성이 실제 값을 가짐으로써 실체화 된 개체 개체 집합 : 개체 인스턴스의 모음 데이터베이스는 개체 집합을 관리한다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

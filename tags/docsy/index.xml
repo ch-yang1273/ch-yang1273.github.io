@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docsy on ych`s blog</title>
+    <link>https://ch-yang1273.github.io/tags/docsy/</link>
+    <description>Recent content in docsy on ych`s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 16 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ch-yang1273.github.io/tags/docsy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 블로그</title>
+      <link>https://ch-yang1273.github.io/posts/blog/2022-12-16-hugo%EB%B8%94%EB%A1%9C%EA%B7%B8/2022-12-16-hugo%EB%B8%94%EB%A1%9C%EA%B7%B8/</link>
+      <pubDate>Fri, 16 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/posts/blog/2022-12-16-hugo%EB%B8%94%EB%A1%9C%EA%B7%B8/2022-12-16-hugo%EB%B8%94%EB%A1%9C%EA%B7%B8/</guid>
+      <description>
+        
+          
+            Hugo 설치 참고 : https://010000.github.io/post/20191214_install_hugo_windows/
+golang 설치
+https://go.dev/dl/
+Microsoft Windows 설치 (1.19.4)
+시스템 환경 변수 Path에 “C:\Program Files\Go\bin” 경로가 자동 등록되었다.
+go version 명령어로 설치 확인
+Git 은 이미 설치되어 있음.
+Hugo 설치
+공식 설치 가이드
+https://gohugo.io/installation/windows/
+Hugo Editions가 Standard, Extended가 있는데 Extended Edition 설치를 추천
+Chocolatey 아니면 Scoop 를 설치하라고 그러네? 뭐지?
+→ Windows용 패키지 매니저란다.
+Chocolatey Chocolatey?
+Windows용 패키지 매니저 MS가 공식으로 제공하는 도구는 아니다. 공식 설치 가이드
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

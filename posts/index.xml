@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on ych`s blog</title>
+    <link>https://ch-yang1273.github.io/posts/</link>
+    <description>Recent content in Posts on ych`s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 16 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ch-yang1273.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 블로그</title>
+      <link>https://ch-yang1273.github.io/posts/blog/2022-12-16-hugo%EB%B8%94%EB%A1%9C%EA%B7%B8/2022-12-16-hugo%EB%B8%94%EB%A1%9C%EA%B7%B8/</link>
+      <pubDate>Fri, 16 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/posts/blog/2022-12-16-hugo%EB%B8%94%EB%A1%9C%EA%B7%B8/2022-12-16-hugo%EB%B8%94%EB%A1%9C%EA%B7%B8/</guid>
+      <description>
+        
+          
+            Hugo 설치 참고 : https://010000.github.io/post/20191214_install_hugo_windows/
+golang 설치
+https://go.dev/dl/
+Microsoft Windows 설치 (1.19.4)
+시스템 환경 변수 Path에 “C:\Program Files\Go\bin” 경로가 자동 등록되었다.
+go version 명령어로 설치 확인
+Git 은 이미 설치되어 있음.
+Hugo 설치
+공식 설치 가이드
+https://gohugo.io/installation/windows/
+Hugo Editions가 Standard, Extended가 있는데 Extended Edition 설치를 추천
+Chocolatey 아니면 Scoop 를 설치하라고 그러네? 뭐지?
+→ Windows용 패키지 매니저란다.
+Chocolatey Chocolatey?
+Windows용 패키지 매니저 MS가 공식으로 제공하는 도구는 아니다. 공식 설치 가이드
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>예외와 로그 실용 가이드 - 2 (임도형)</title>
+      <link>https://ch-yang1273.github.io/posts/java/2022-12-09-%EC%98%88%EC%99%B8%EC%99%80-%EB%A1%9C%EA%B7%B8-%EC%8B%A4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C-2%EC%9E%84%EB%8F%84%ED%98%95/2022-12-09-%EC%98%88%EC%99%B8%EC%99%80-%EB%A1%9C%EA%B7%B8-%EC%8B%A4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C-2%EC%9E%84%EB%8F%84%ED%98%95/</link>
+      <pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/posts/java/2022-12-09-%EC%98%88%EC%99%B8%EC%99%80-%EB%A1%9C%EA%B7%B8-%EC%8B%A4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C-2%EC%9E%84%EB%8F%84%ED%98%95/2022-12-09-%EC%98%88%EC%99%B8%EC%99%80-%EB%A1%9C%EA%B7%B8-%EC%8B%A4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C-2%EC%9E%84%EB%8F%84%ED%98%95/</guid>
+      <description>
+        
+          
+            참고 : Exception log practical_coding_guide, 예외와 로그 코딩 실용 가이드 항상 성가셨던 고민들 예외는 잡았는데, 로그를 남겨야 하나? 로그 레벨은? 어떤 예외 클래스로? 예외 메시지에는 어떤 값을? 예외의 로그를 어디서? 아무데나?
+로그 중복
+로그 누락
+로그 위치가 고민되면 안된다. (이미 정해져 있어야 한다)
+단순화하면, 예외가 발생한 이쪽과 저쪽(던짐)은 구분이 된다.
+발생한 예외를 던지기 전에 로그를 남긴다. 정상 상황으로 처리한 곳에서 로그를 남긴다. 로그 레벨 - 애매한 상황 사용자의 입력이 잘못되어 발생한 예외 예외는 발생했지만, 정말 예외 상황은 아니다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>예외 처리 가이드 - 1 (임도형)</title>
+      <link>https://ch-yang1273.github.io/posts/java/2022-12-08-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%A0%95%EB%A6%AC-1%EC%9E%84%EB%8F%84%ED%98%95/2022-12-08-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%A0%95%EB%A6%AC-1%EC%9E%84%EB%8F%84%ED%98%95/</link>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/posts/java/2022-12-08-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%A0%95%EB%A6%AC-1%EC%9E%84%EB%8F%84%ED%98%95/2022-12-08-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%A0%95%EB%A6%AC-1%EC%9E%84%EB%8F%84%ED%98%95/</guid>
+      <description>
+        
+          
+            참고 : 예외처리가이드 예외의 종류? 예측 가능한 예외
+예측 가능하지 않은 예외
+예측 가능한 예외 예측 가능한 만큼 처리 자체가 개발의 일부이다. Example 로그인이 실패했다. DB에 레코드가 없다. 파일을 찾을 수 없다. 예측 가능하지 않은 예외 버그 아니면 시스템 환경에 기인한다. 실시간 처리는 불가능하다. 대신 개선해야 한다. 예외 처리가 제대로 되지 않으면? 문제가 발생해도 로그를 보지 않는다. 로그가 중복되거나 누락 로그에 도움 되는 내용이 없다. 시스템 개선 한번 발생한 예측하지 못하는 상황이 다시 발생하지 않도록 하는 것
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Optional 객체</title>
+      <link>https://ch-yang1273.github.io/posts/java/2022-02-24-optional-%EA%B0%9D%EC%B2%B4/2022-02-24-optional-%EA%B0%9D%EC%B2%B4/</link>
+      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/posts/java/2022-02-24-optional-%EA%B0%9D%EC%B2%B4/2022-02-24-optional-%EA%B0%9D%EC%B2%B4/</guid>
+      <description>
+        
+          
+            null 체크를 편하게 하기 위한 클래스이다.
+만약 null 반환하는 메소드가 있다면 아래 예제와 같이 null 체크를 한다.
+1Member member = memberRepository.findById(id); 2if (member != null) { 3 if (member.isAdmin()) { 4 member.addAdminPermissions(); 5 } else { 6 member.addDefaultPermissions(); 7 } 8} 하지만 Optional 객체로 감싸서 반환하면 아래와 예제와 같이 변경할 수 있다.
+1/** 2 * HashMap의 get은 찾는 값이 없으면 null을 반환하는 메소드다. 3 */ 4////////////////////////////////////////////////////////////////////////////// 5// Optional 객체로 감싸서 반환하는 메소드 예제 6private static Map&amp;lt;Long, Member&amp;gt; store = new HashMap&amp;lt;&amp;gt;(); 7 8public Optional&amp;lt;Member&amp;gt; findById(Long id) { 9 //return store.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

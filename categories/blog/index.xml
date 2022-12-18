@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on ych`s blog</title>
+    <link>https://ch-yang1273.github.io/categories/blog/</link>
+    <description>Recent content in blog on ych`s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 16 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ch-yang1273.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Js Digest 에러</title>
+      <link>https://ch-yang1273.github.io/notes/blog/2022-12-16-js-digest-%EC%97%90%EB%9F%AC/2022-12-16-js-digest-%EC%97%90%EB%9F%AC/</link>
+      <pubDate>Fri, 16 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/notes/blog/2022-12-16-js-digest-%EC%97%90%EB%9F%AC/2022-12-16-js-digest-%EC%97%90%EB%9F%AC/</guid>
+      <description>
+        
+          
+            에러 현상 1Failed to find a valid digest in the &amp;#39;integrity&amp;#39; attribute for resource &amp;#39;https://ch-yang1273.github.io/en/js/bundle.d0a3ec7c713389a2d8c3545b99eb7e5519e045808f399e8609c37cb5f0b80fb9d0a05da289fbda3d947daee16150475f5c6d7465e3517b3a246037068d485966.js&amp;#39; with computed SHA-512 integrity &amp;#39;kh5Ntgf028JQkGf0yjXre13eHvIOr2oC13RBICwXpbXXA3Ssdnx7V9UwHhxuXQ/r/gbxnk2PIPiYqD0xsedFuw==&amp;#39;. The resource has been blocked. Build 된 Hugo site를 빌드해서 github에 올려보니 에니메이션이나 Dark mode 버튼 등이 동작하지 않았다.
+→ Local Server에서는 정상 동작했다.
+개발자모드를 켜서 보니 위와 같은 에러를 확인했다.
+“*.js” 파일이 git 으로 upload 되는 과정에서 CRLF 상태가 변해 Hash digest도 변경되는 것으로 보였다.
+해결 방법 “public/” 폴더 아래의 “*.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hugo 블로그</title>
+      <link>https://ch-yang1273.github.io/posts/blog/2022-12-16-hugo%EB%B8%94%EB%A1%9C%EA%B7%B8/2022-12-16-hugo%EB%B8%94%EB%A1%9C%EA%B7%B8/</link>
+      <pubDate>Fri, 16 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/posts/blog/2022-12-16-hugo%EB%B8%94%EB%A1%9C%EA%B7%B8/2022-12-16-hugo%EB%B8%94%EB%A1%9C%EA%B7%B8/</guid>
+      <description>
+        
+          
+            Hugo 설치 참고 : https://010000.github.io/post/20191214_install_hugo_windows/
+golang 설치
+https://go.dev/dl/
+Microsoft Windows 설치 (1.19.4)
+시스템 환경 변수 Path에 “C:\Program Files\Go\bin” 경로가 자동 등록되었다.
+go version 명령어로 설치 확인
+Git 은 이미 설치되어 있음.
+Hugo 설치
+공식 설치 가이드
+https://gohugo.io/installation/windows/
+Hugo Editions가 Standard, Extended가 있는데 Extended Edition 설치를 추천
+Chocolatey 아니면 Scoop 를 설치하라고 그러네? 뭐지?
+→ Windows용 패키지 매니저란다.
+Chocolatey Chocolatey?
+Windows용 패키지 매니저 MS가 공식으로 제공하는 도구는 아니다. 공식 설치 가이드
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

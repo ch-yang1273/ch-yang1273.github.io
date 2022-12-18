@@ -6,20 +6,21 @@
     <description>Recent content on ych`s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 24 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ch-yang1273.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ch-yang1273.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Using Hugo page bundles</title>
-      <link>https://ch-yang1273.github.io/post/bundle/</link>
-      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      <title>Hugo Js Digest 에러</title>
+      <link>https://ch-yang1273.github.io/notes/blog/2022-12-16-js-digest-%EC%97%90%EB%9F%AC/2022-12-16-js-digest-%EC%97%90%EB%9F%AC/</link>
+      <pubDate>Fri, 16 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://ch-yang1273.github.io/post/bundle/</guid>
+      <guid>https://ch-yang1273.github.io/notes/blog/2022-12-16-js-digest-%EC%97%90%EB%9F%AC/2022-12-16-js-digest-%EC%97%90%EB%9F%AC/</guid>
       <description>
         
           
-            Page bundles are an optional way to organize page resources within Hugo.
-You can opt-in to using page bundles in Hugo Clarity with usePageBundles in your site configuration or in a page&#39;s front matter. Read more about usePageBundles.
-With page bundles, resources for a page or section, like images or attached files, live in the same directory as the content itself rather than in your static directory.
-Hugo Clarity supports the use of leaf bundles, which are any directories within the content directory that contain an index.
+            에러 현상 1Failed to find a valid digest in the &amp;#39;integrity&amp;#39; attribute for resource &amp;#39;https://ch-yang1273.github.io/en/js/bundle.d0a3ec7c713389a2d8c3545b99eb7e5519e045808f399e8609c37cb5f0b80fb9d0a05da289fbda3d947daee16150475f5c6d7465e3517b3a246037068d485966.js&amp;#39; with computed SHA-512 integrity &amp;#39;kh5Ntgf028JQkGf0yjXre13eHvIOr2oC13RBICwXpbXXA3Ssdnx7V9UwHhxuXQ/r/gbxnk2PIPiYqD0xsedFuw==&amp;#39;. The resource has been blocked. Build 된 Hugo site를 빌드해서 github에 올려보니 에니메이션이나 Dark mode 버튼 등이 동작하지 않았다.
+→ Local Server에서는 정상 동작했다.
+개발자모드를 켜서 보니 위와 같은 에러를 확인했다.
+“*.js” 파일이 git 으로 upload 되는 과정에서 CRLF 상태가 변해 Hash digest도 변경되는 것으로 보였다.
+해결 방법 “public/” 폴더 아래의 “*.
           
           
         
@@ -27,15 +28,29 @@ Hugo Clarity supports the use of leaf bundles, which are any directories within 
     </item>
     
     <item>
-      <title>Using OpenStreetMap</title>
-      <link>https://ch-yang1273.github.io/post/map/</link>
-      <pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate>
+      <title>Hugo 블로그</title>
+      <link>https://ch-yang1273.github.io/posts/blog/2022-12-16-hugo%EB%B8%94%EB%A1%9C%EA%B7%B8/2022-12-16-hugo%EB%B8%94%EB%A1%9C%EA%B7%B8/</link>
+      <pubDate>Fri, 16 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://ch-yang1273.github.io/post/map/</guid>
+      <guid>https://ch-yang1273.github.io/posts/blog/2022-12-16-hugo%EB%B8%94%EB%A1%9C%EA%B7%B8/2022-12-16-hugo%EB%B8%94%EB%A1%9C%EA%B7%B8/</guid>
       <description>
         
           
-            
+            Hugo 설치 참고 : https://010000.github.io/post/20191214_install_hugo_windows/
+golang 설치
+https://go.dev/dl/
+Microsoft Windows 설치 (1.19.4)
+시스템 환경 변수 Path에 “C:\Program Files\Go\bin” 경로가 자동 등록되었다.
+go version 명령어로 설치 확인
+Git 은 이미 설치되어 있음.
+Hugo 설치
+공식 설치 가이드
+https://gohugo.io/installation/windows/
+Hugo Editions가 Standard, Extended가 있는데 Extended Edition 설치를 추천
+Chocolatey 아니면 Scoop 를 설치하라고 그러네? 뭐지?
+→ Windows용 패키지 매니저란다.
+Chocolatey Chocolatey?
+Windows용 패키지 매니저 MS가 공식으로 제공하는 도구는 아니다. 공식 설치 가이드
           
           
         
@@ -43,17 +58,20 @@ Hugo Clarity supports the use of leaf bundles, which are any directories within 
     </item>
     
     <item>
-      <title>Using Notices</title>
-      <link>https://ch-yang1273.github.io/post/notices/</link>
-      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      <title>예외와 로그 실용 가이드 - 2 (임도형)</title>
+      <link>https://ch-yang1273.github.io/posts/java/2022-12-09-%EC%98%88%EC%99%B8%EC%99%80-%EB%A1%9C%EA%B7%B8-%EC%8B%A4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C-2%EC%9E%84%EB%8F%84%ED%98%95/2022-12-09-%EC%98%88%EC%99%B8%EC%99%80-%EB%A1%9C%EA%B7%B8-%EC%8B%A4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C-2%EC%9E%84%EB%8F%84%ED%98%95/</link>
+      <pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://ch-yang1273.github.io/post/notices/</guid>
+      <guid>https://ch-yang1273.github.io/posts/java/2022-12-09-%EC%98%88%EC%99%B8%EC%99%80-%EB%A1%9C%EA%B7%B8-%EC%8B%A4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C-2%EC%9E%84%EB%8F%84%ED%98%95/2022-12-09-%EC%98%88%EC%99%B8%EC%99%80-%EB%A1%9C%EA%B7%B8-%EC%8B%A4%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C-2%EC%9E%84%EB%8F%84%ED%98%95/</guid>
       <description>
         
           
-            The &amp;quot;Notices&amp;quot; shortcode enables you to call out pieces of information - sidebars, warnings, tips, etc.
-To create a notice on a page, you can use the notice shortcode.
-You use the notice shortcode, with the first parameter being one of note, info, tip, and warning. Then add a title for your note in quotes as the second parameter. The inner body of the note can be whatever markdown you want to create.
+            참고 : Exception log practical_coding_guide, 예외와 로그 코딩 실용 가이드 항상 성가셨던 고민들 예외는 잡았는데, 로그를 남겨야 하나? 로그 레벨은? 어떤 예외 클래스로? 예외 메시지에는 어떤 값을? 예외의 로그를 어디서? 아무데나?
+로그 중복
+로그 누락
+로그 위치가 고민되면 안된다. (이미 정해져 있어야 한다)
+단순화하면, 예외가 발생한 이쪽과 저쪽(던짐)은 구분이 된다.
+발생한 예외를 던지기 전에 로그를 남긴다. 정상 상황으로 처리한 곳에서 로그를 남긴다. 로그 레벨 - 애매한 상황 사용자의 입력이 잘못되어 발생한 예외 예외는 발생했지만, 정말 예외 상황은 아니다.
           
           
         
@@ -61,17 +79,17 @@ You use the notice shortcode, with the first parameter being one of note, info, 
     </item>
     
     <item>
-      <title>Guia de Sintaxe Markdown</title>
-      <link>https://ch-yang1273.github.io/post/markdown-syntax.pt/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>예외 처리 가이드 - 1 (임도형)</title>
+      <link>https://ch-yang1273.github.io/posts/java/2022-12-08-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%A0%95%EB%A6%AC-1%EC%9E%84%EB%8F%84%ED%98%95/2022-12-08-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%A0%95%EB%A6%AC-1%EC%9E%84%EB%8F%84%ED%98%95/</link>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://ch-yang1273.github.io/post/markdown-syntax.pt/</guid>
+      <guid>https://ch-yang1273.github.io/posts/java/2022-12-08-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%A0%95%EB%A6%AC-1%EC%9E%84%EB%8F%84%ED%98%95/2022-12-08-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%AC-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%A0%95%EB%A6%AC-1%EC%9E%84%EB%8F%84%ED%98%95/</guid>
       <description>
         
           
-            &lt;p&gt;&lt;strong&gt;Este artigo oferece um exemplo básico de uma tradução em Português. O restante conteúdo não foi traduzido.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Artigo original: https://ch-yang1273.github.io/post/markdown-syntax/&lt;/p&gt;
-&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+            참고 : 예외처리가이드 예외의 종류? 예측 가능한 예외
+예측 가능하지 않은 예외
+예측 가능한 예외 예측 가능한 만큼 처리 자체가 개발의 일부이다. Example 로그인이 실패했다. DB에 레코드가 없다. 파일을 찾을 수 없다. 예측 가능하지 않은 예외 버그 아니면 시스템 환경에 기인한다. 실시간 처리는 불가능하다. 대신 개선해야 한다. 예외 처리가 제대로 되지 않으면? 문제가 발생해도 로그를 보지 않는다. 로그가 중복되거나 누락 로그에 도움 되는 내용이 없다. 시스템 개선 한번 발생한 예측하지 못하는 상황이 다시 발생하지 않도록 하는 것
           
           
         
@@ -79,15 +97,18 @@ You use the notice shortcode, with the first parameter being one of note, info, 
     </item>
     
     <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://ch-yang1273.github.io/post/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>데이터베이스 개론(정리)</title>
+      <link>https://ch-yang1273.github.io/notes/database/2022-06-06-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%A1%A0%EC%A0%95%EB%A6%AC/2022-06-06-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%A1%A0%EC%A0%95%EB%A6%AC/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://ch-yang1273.github.io/post/markdown-syntax/</guid>
+      <guid>https://ch-yang1273.github.io/notes/database/2022-06-06-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%A1%A0%EC%A0%95%EB%A6%AC/2022-06-06-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EA%B0%9C%EB%A1%A0%EC%A0%95%EB%A6%AC/</guid>
       <description>
         
           
-            &lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+            3장. 데이터베이스 시스템 스키마 데이터 구조와 제약 조건을 정의
+Example)
+저장된 값 = 인스턴스
+시스템 카탈로그 (= 데이터 사전, 시스템 데이터베이스) 저장되는 데이터에 관한 정보를 저장하는 곳 데이터 정의어 (DDL) - Difinition 데이터 조작어 (DML) - Manipulation 데이터 제어어 (DCL) - Control 4장. 데이터 모델링 데이터 모델링 현실 세계의 데이터를 컴퓨터 세계의 데이터베이스로 옮기는 변환 과정 E-R Model (개체-관계 모델) Entitiy-Relationship Model Entity (개체) 저장할만한 가치가 있는 요소 개체 타입 → 고객(이름, 주소, 연락처, 적립금) 개체 인스턴스 : 개체를 구성하는 속성이 실제 값을 가짐으로써 실체화 된 개체 개체 집합 : 개체 인스턴스의 모음 데이터베이스는 개체 집합을 관리한다.
           
           
         
@@ -95,79 +116,18 @@ You use the notice shortcode, with the first parameter being one of note, info, 
     </item>
     
     <item>
-      <title>Rich Content</title>
-      <link>https://ch-yang1273.github.io/post/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Optional 객체</title>
+      <link>https://ch-yang1273.github.io/posts/java/2022-02-24-optional-%EA%B0%9D%EC%B2%B4/2022-02-24-optional-%EA%B0%9D%EC%B2%B4/</link>
+      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://ch-yang1273.github.io/post/rich-content/</guid>
+      <guid>https://ch-yang1273.github.io/posts/java/2022-02-24-optional-%EA%B0%9D%EC%B2%B4/2022-02-24-optional-%EA%B0%9D%EC%B2%B4/</guid>
       <description>
         
           
-            &lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://ch-yang1273.github.io/post/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://ch-yang1273.github.io/post/placeholder-text/</guid>
-      <description>
-        
-          
-            &lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://ch-yang1273.github.io/post/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://ch-yang1273.github.io/post/math-typesetting/</guid>
-      <description>
-        
-          
-            &lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Emoji Support</title>
-      <link>https://ch-yang1273.github.io/post/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://ch-yang1273.github.io/post/emoji-support/</guid>
-      <description>
-        
-          
-            &lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Emoji Support</title>
-      <link>https://ch-yang1273.github.io/test/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://ch-yang1273.github.io/test/emoji-support/</guid>
-      <description>
-        
-          
-            &lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
+            null 체크를 편하게 하기 위한 클래스이다.
+만약 null 반환하는 메소드가 있다면 아래 예제와 같이 null 체크를 한다.
+1Member member = memberRepository.findById(id); 2if (member != null) { 3 if (member.isAdmin()) { 4 member.addAdminPermissions(); 5 } else { 6 member.addDefaultPermissions(); 7 } 8} 하지만 Optional 객체로 감싸서 반환하면 아래와 예제와 같이 변경할 수 있다.
+1/** 2 * HashMap의 get은 찾는 값이 없으면 null을 반환하는 메소드다. 3 */ 4////////////////////////////////////////////////////////////////////////////// 5// Optional 객체로 감싸서 반환하는 메소드 예제 6private static Map&amp;lt;Long, Member&amp;gt; store = new HashMap&amp;lt;&amp;gt;(); 7 8public Optional&amp;lt;Member&amp;gt; findById(Long id) { 9 //return store.
           
           
         
