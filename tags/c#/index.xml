@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c# on ych`s blog</title>
+    <link>https://ch-yang1273.github.io/tags/c#/</link>
+    <description>Recent content in c# on ych`s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ch-yang1273.github.io/tags/c#/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C# char를 int로 변환</title>
+      <link>https://ch-yang1273.github.io/notes/c-lang/2021-06-02-char%EB%A5%BCint%EB%A1%9C%EB%B3%80%ED%99%98/2021-06-02-char%EB%A5%BCint%EB%A1%9C%EB%B3%80%ED%99%98/</link>
+      <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/notes/c-lang/2021-06-02-char%EB%A5%BCint%EB%A1%9C%EB%B3%80%ED%99%98/2021-06-02-char%EB%A5%BCint%EB%A1%9C%EB%B3%80%ED%99%98/</guid>
+      <description>
+        
+          
+            1 : GetNumericValue() 1using System; 2 3namespace Example 4{ 5 class Conversion 6 { 7 static void Main(string[] args) 8 { 9 char Character = &amp;#39;9&amp;#39;; 10 Console.WriteLine(&amp;#34;The character is: &amp;#34; + Character); 11 int integer = (int)Char.GetNumericValue(Character); 12 Console.WriteLine(&amp;#34;The integer is: {0}&amp;#34;, integer); 13 } 14 } 15} 2: ASCII 1using System; 2 3namespace Example 4{ 5 class Conversion 6 { 7 static void Main(string[] args) 8 { 9 char Character = &amp;#39;9&amp;#39;; 10 Console.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>C# 프로젝트 Default Setting</title>
+      <link>https://ch-yang1273.github.io/notes/c-lang/2021-05-05-c-sharp%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8defaultsetting/2021-05-05-c-sharp%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8defaultsetting/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/notes/c-lang/2021-05-05-c-sharp%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8defaultsetting/2021-05-05-c-sharp%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8defaultsetting/</guid>
+      <description>
+        
+          
+            Tools Just Color Picker : Screen 상에서 색상 RGB 값 따는 프로그램 Form1 StartPosition : CenterScreen
+폼이 처음 나타날 때 해당 폼의 위치를 결정 AutoScaleMode : None
+화면 해상도나 글꼴이 변경될 때 폼이나 컨트롤의 크기가 조정되는 방식을 결정합니다. 실행 환경 변경 시 레이아웃이 깨지는 문제를 방지할 수 있다. Dpi : 디스플레이 해상도를 기준으로 크기를 제어합니다. 일반적인 해상도는 96 및 120DPI입니다. Font : 클래스에서 사용하는 글꼴(일반적으로 시스템 글꼴)의 크기를 기준으로 크기를 제어합니다.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>C# panel</title>
+      <link>https://ch-yang1273.github.io/notes/c-lang/2020-10-21-c-sharp-panel/2020-10-21-c-sharp-panel/</link>
+      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/notes/c-lang/2020-10-21-c-sharp-panel/2020-10-21-c-sharp-panel/</guid>
+      <description>
+        
+          
+            1. TableLayoutPanel 2. Panel TableLayoutPanel 으로 구도 잡고 위에 Panel 올려줘야 도구(controller? 컴포넌트?)들 올라감 재생버튼같은거 달려있는데 부모 컨테이너에 도킹 뭐지? 도킹이 뭐지? 3. 도킹 TableLayoutPanel 에 Panel 놓고 도킹하니까 쫙 퍼지면서 Layout크기만큼 쭉 커진다. 
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>C# 상단바 없애기</title>
+      <link>https://ch-yang1273.github.io/notes/c-lang/2020-10-21-%EC%83%81%EB%8B%A8%EB%B0%94%EC%97%86%EC%95%A0%EA%B8%B0/2020-10-21-%EC%83%81%EB%8B%A8%EB%B0%94%EC%97%86%EC%95%A0%EA%B8%B0/</link>
+      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/notes/c-lang/2020-10-21-%EC%83%81%EB%8B%A8%EB%B0%94%EC%97%86%EC%95%A0%EA%B8%B0/2020-10-21-%EC%83%81%EB%8B%A8%EB%B0%94%EC%97%86%EC%95%A0%EA%B8%B0/</guid>
+      <description>
+        
+          
+            ※ 상단바 색이 마음에 안들어서 Black으로 하려한다 1. Form1 속성 탭에서 FormBorderStyle → Sizable에서 None로 변경 2. TableLayoutPanel으로 상단바를 대신할 지역 구역 구분 3. 세개의 마우스 이벤트 추가 MouseDown
+1/*눌렀을 때 움직이도록 하기 위한 bool 변수*/ 2g_isMove = true; 3/*눌렀을 때의 위치를 저장하기 위한 Point 객체*/ 4g_fPt = new Point(e.X, e.Y); MouseUp
+1/*떼었을 때 움직이지 않도록*/ 2g_isMove = false; MouseMove
+1if(g_isMove &amp;amp;&amp;amp; (e.Button &amp;amp; MouseButtons.Left) == MouseButtons.Left) 2{ 3	Location = new Point(this.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

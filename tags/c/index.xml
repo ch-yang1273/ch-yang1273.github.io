@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c on ych`s blog</title>
+    <link>https://ch-yang1273.github.io/tags/c/</link>
+    <description>Recent content in c on ych`s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ch-yang1273.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GCC 설치 (MinGW)</title>
+      <link>https://ch-yang1273.github.io/notes/c-lang/2021-03-09-gcc%EC%84%A4%EC%B9%98-mingw/2021-03-09-gcc%EC%84%A4%EC%B9%98-mingw/</link>
+      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/notes/c-lang/2021-03-09-gcc%EC%84%A4%EC%B9%98-mingw/2021-03-09-gcc%EC%84%A4%EC%B9%98-mingw/</guid>
+      <description>
+        
+          
+            설치 위치 : http://mingw-w64.org/doku.php
+Architecture i686 : 32bits x86_64 : 64bits Threads posix win32 Exception SEH : 훨씬 더 효율적이지만 호환성에 문제가 있는 것으로 보인다. SEH를 사용하지 않는 라이브러리를 사용할 때 문제가 있다. 이걸 대부분 쓰시네. SJLJ : 여러 아키텍처에서 광범위한 호환성을 보인다. SJLJ 예외는 C 라이브러리를 포함한 다른 예외 처리 시스템을 사용하는 라이브러리를 통해 발생할 수 있다. 하지만 성능이 저하된다. 코드에 관한 실제 차이점은 없고 전환도 쉽다. 걱정하지 마라.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>C언어 코딩 컨벤션</title>
+      <link>https://ch-yang1273.github.io/notes/c-lang/2020-09-24-c%EC%96%B8%EC%96%B4%EC%BD%94%EB%94%A9%EC%BB%A8%EB%B2%A4%EC%85%98/2020-09-24-c%EC%96%B8%EC%96%B4%EC%BD%94%EB%94%A9%EC%BB%A8%EB%B2%A4%EC%85%98/</link>
+      <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/notes/c-lang/2020-09-24-c%EC%96%B8%EC%96%B4%EC%BD%94%EB%94%A9%EC%BB%A8%EB%B2%A4%EC%85%98/2020-09-24-c%EC%96%B8%EC%96%B4%EC%BD%94%EB%94%A9%EC%BB%A8%EB%B2%A4%EC%85%98/</guid>
+      <description>
+        
+          
+            LOCAL 함수, LOCAL 전역변수 모듈 내부에서만 사용되는 함수, 전역변수는 static으로 정의하여 다른 모듈이 직접 사용할 수 없게 함
+→ static LOCAL로 표현하던데 규칙이 있나? 좋은 것 같음.
+1/*모든 &amp;#39;(&amp;#39; 앞은 붙임*/ 2for(~) 3if(~) 4switch(~) 5 6/*함수의 &amp;#39;{&amp;#39; 는 내림*/ 7void func(~) 8{ 9} 10 11/*for, if, switch 문의 &amp;#39;{&amp;#39; 도 내림*/ 12for(~) 13{ 14} 15 16if(~) 17{ 18} 19 20/* if문 한 줄 실행 문 */ 21if(~) { } 식별자 이름 작성 규칙 모듈의 전역 변수 이름 짓기
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>C printf 구현</title>
+      <link>https://ch-yang1273.github.io/notes/c-lang/2020-09-02-c-printf-%EA%B5%AC%ED%98%84/2020-09-02-c-printf-%EA%B5%AC%ED%98%84/</link>
+      <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/notes/c-lang/2020-09-02-c-printf-%EA%B5%AC%ED%98%84/2020-09-02-c-printf-%EA%B5%AC%ED%98%84/</guid>
+      <description>
+        
+          
+            ※ 시리얼 출력 위치를 직접 연결하기 위함(firmware)
+시험 보드 spc560d 코드 utile.c
+1#include &amp;#34;stdarg.h&amp;#34; /*va_list, va_start, va_end vsprintf ...*/ 2#include &amp;lt;stdio.h&amp;gt; 3//#include &amp;lt;stdint.h&amp;gt; /*uint32_t, uint8_t etc...*/ 4#include &amp;lt;errno.h&amp;gt; 5#include &amp;lt;limits.h&amp;gt; 6//#include &amp;lt;string.h&amp;gt; 7 8#include &amp;#34;components.h&amp;#34; 9 10#define UART_BUF_SIZE 256 11 12char uart_buf[UART_BUF_SIZE]; 13 14#define to_digit(c) ((c) - &amp;#39;0&amp;#39;) 15#define is_digit(c) ((unsigned)to_digit(c) &amp;lt;= 9) 16#define to_char(n) ((n) + &amp;#39;0&amp;#39;) 17 18#define BUF 68 19 20#define ALT 0X001 21#define HEXPREFIX 0X002 22#define LADJUST 0X004 23#define LONGDBL 0X008 24#define LONGINT 0X010 25#define QUADINT 0X020 26#define SHORTINT 0X040 27#define ZEROPAD 0X080 28#define FPT 0X100 29 30//#define ULONG_MAX	0xffffffff 31//#define LONG_MAX	0x7fffffff 32//#define	UQUAD_MAX	0xffffffffffffffffULL 33#define QUAD_MAX	0x7fffffffffffffffLL 34 35//typedef void* va_list; 36 37void custom_puts(const char *str); 38 39void *sbrk(size_t incr) { 40 extern uint8_t __heap_base__; 41 extern uint8_t __heap_end__; 42 static uint8_t *p = &amp;amp;__heap_base__; 43 static uint8_t *newp; 44 newp = p + incr; 45 46 if (newp &amp;gt; &amp;amp;__heap_end__) { 47 errno = ENOMEM; 48 return (void *)-1; 49 } 50 return p = newp; 51} 52 53int custom_printf(const char *format, .
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

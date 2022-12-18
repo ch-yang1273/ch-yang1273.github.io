@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>test on ych`s blog</title>
+    <link>https://ch-yang1273.github.io/tags/test/</link>
+    <description>Recent content in test on ych`s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 26 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ch-yang1273.github.io/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JUnit5:assertThrows</title>
+      <link>https://ch-yang1273.github.io/notes/test/2022-02-26-junit5assertthrows/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/notes/test/2022-02-26-junit5assertthrows/</guid>
+      <description>
+        
+          
+            예제 1 @Test 2 public void 중복_회원_예외() throws Exception { 3 //Given 4 Member member1 = new Member(); 5 member1.setName(&amp;#34;spring&amp;#34;); 6 7 Member member2 = new Member(); 8 member2.setName(&amp;#34;spring 1&amp;#34;); // 같은 이름으로 중복 회원가입 9 10 //When 11 12 memberService.join(member1); 13 IllegalStateException e = assertThrows(IllegalStateException.class, 14 () -&amp;gt; memberService.join(member2));//예외가 발생해야 한다. 15 //assertThat(e.getMessage()).isEqualTo(&amp;#34;이미 존재하는 회원입니다.&amp;#34;); 16 } assertThrows( 발생해야 할 Exception, 검사할 람다식); Exception가 발생하지 않아도, 예상되지 않은 Exception이 발생해도 Test가 Fail 난다.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

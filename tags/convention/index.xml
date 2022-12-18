@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>convention on ych`s blog</title>
+    <link>https://ch-yang1273.github.io/tags/convention/</link>
+    <description>Recent content in convention on ych`s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 24 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ch-yang1273.github.io/tags/convention/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C언어 코딩 컨벤션</title>
+      <link>https://ch-yang1273.github.io/notes/c-lang/2020-09-24-c%EC%96%B8%EC%96%B4%EC%BD%94%EB%94%A9%EC%BB%A8%EB%B2%A4%EC%85%98/2020-09-24-c%EC%96%B8%EC%96%B4%EC%BD%94%EB%94%A9%EC%BB%A8%EB%B2%A4%EC%85%98/</link>
+      <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/notes/c-lang/2020-09-24-c%EC%96%B8%EC%96%B4%EC%BD%94%EB%94%A9%EC%BB%A8%EB%B2%A4%EC%85%98/2020-09-24-c%EC%96%B8%EC%96%B4%EC%BD%94%EB%94%A9%EC%BB%A8%EB%B2%A4%EC%85%98/</guid>
+      <description>
+        
+          
+            LOCAL 함수, LOCAL 전역변수 모듈 내부에서만 사용되는 함수, 전역변수는 static으로 정의하여 다른 모듈이 직접 사용할 수 없게 함
+→ static LOCAL로 표현하던데 규칙이 있나? 좋은 것 같음.
+1/*모든 &amp;#39;(&amp;#39; 앞은 붙임*/ 2for(~) 3if(~) 4switch(~) 5 6/*함수의 &amp;#39;{&amp;#39; 는 내림*/ 7void func(~) 8{ 9} 10 11/*for, if, switch 문의 &amp;#39;{&amp;#39; 도 내림*/ 12for(~) 13{ 14} 15 16if(~) 17{ 18} 19 20/* if문 한 줄 실행 문 */ 21if(~) { } 식별자 이름 작성 규칙 모듈의 전역 변수 이름 짓기
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

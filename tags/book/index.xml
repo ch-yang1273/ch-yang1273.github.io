@@ -26,5 +26,23 @@ Example)
       </description>
     </item>
     
+    <item>
+      <title>ARM 기반 C코드 최적화</title>
+      <link>https://ch-yang1273.github.io/notes/c-lang/2020-09-14-arm%EA%B8%B0%EB%B0%98c%EC%BD%94%EB%93%9C%EC%B5%9C%EC%A0%81%ED%99%94/2020-09-14-arm%EA%B8%B0%EB%B0%98c%EC%BD%94%EB%93%9C%EC%B5%9C%EC%A0%81%ED%99%94/</link>
+      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ch-yang1273.github.io/notes/c-lang/2020-09-14-arm%EA%B8%B0%EB%B0%98c%EC%BD%94%EB%93%9C%EC%B5%9C%EC%A0%81%ED%99%94/2020-09-14-arm%EA%B8%B0%EB%B0%98c%EC%BD%94%EB%93%9C%EC%B5%9C%EC%A0%81%ED%99%94/</guid>
+      <description>
+        
+          
+            임베디드 시스템 개발 환경 크로스 컴파일러 고급 언어로 작성된 소스 코드를 해당 Target의 어셈블리 코드로 번역하는 것 크로스 툴체인 크로스 컴파일러를 포함한 실행 파일을 생성하기 위한 여러가지 요소들을 포함하는 소프트웨어 크로스 컴파일러, 어셈블러, 링커, 라이브러리 등으로 구성 라이브러리의 종류 정적 라이브러리 - 용량이 큼 공유 라이브러리 - .o 동적 라이브러리 - .so C Entry point C Entry point : 프로그램이 시작하는 진입 위치
+Assembly어를 통해 작성 가능함.
+ex) Main(), main() 등
+          
+          
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>
